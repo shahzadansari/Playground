@@ -36,9 +36,7 @@ fun TypeSafeComposeNavigationScreen() {
             ScreenB(
                 amount = args.amount,
                 user = args.user,
-                onNavigateBack = {
-                    navController.navigateUp()
-                }
+                onNavigateBack = navController::navigateUp
             )
         }
     }
